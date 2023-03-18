@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins Extra Light', sans-serif;
+  color: #FFFFFF;
+}
+
+/* General styles */
+body {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #152040;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-family: 'Poppins Semi Bold', sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+#main-title {
+  padding-top: 50px;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 2px solid #0072c6;
+  border-radius: 0;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+.search-button {
+  background-color: #FFDC21;
+  color: #000000;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-button:hover {
+  background-color: #FFB900;
+}
+
+/* Map */
+.map-container {
+  margin-bottom: 2rem;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+/* Dive shop list */
+.dive-shop-list-container {
+  width: 100%;
+}
+
+#dive-shop-list {
+  width: 100%;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+#dive-shop-list h2 {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  font-family: 'Poppins Semi Bold', sans-serif;
+}
+
+#dive-shop-list ul {
+  list-style-type: none;
+}
+
+.dive-shop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.dive-shop-info {
+  font-size: 1em;
+  font-family: 'Poppins Extra Light', sans-serif;
+}
+
+.dive-shop-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.visit-website-btn, .get-directions-btn {
+  background-color: #FFDC21;
+  color: #000000;
+  border: none;
+  border-radius: 0;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  font-family: 'Poppins Extra Light', sans-serif;
+}
+
+.visit-website-btn:hover, .get-directions-btn:hover {
+  background-color: #FFB300;
+}
+
+.star-rating {
+  display: inline-block;
+  background: url('star-rating-sprite.png') repeat-x;
+  background-size: auto 20px;
+  height: 20px;
+  position: relative;
+  bottom: 2px;
+}
+
+#dive-shop-list li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Poppins Extra Light', sans-serif;
+}
+  
+.shop-name {
+  font-weight: bold;
+  font-family: 'Poppins Semi Bold', sans-serif;
+}
+
+.shop-rating {
+  margin-left: 0.5rem;
+  font-family: 'Poppins Extra Light', sans-serif;
+}
+
+.shop-address {
+  margin-left: 0.5rem;
+  font-family: 'Poppins Extra Light', sans-serif;
+}
+
+#dive-shop-list li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive design */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-input,
+  .search-button {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
